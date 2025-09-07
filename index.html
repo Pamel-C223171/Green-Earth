@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
+    <link rel="shortcut icon" href="./assets/hero-leaf1.png" type="image/x-icon">
+    <!-- tailwind & daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    
+
+    <header class="bg-[#15803D] px-12">
+        <div class="navbar text-white shadow-sm">
+            <div class="navbar-start">
+                <h3 class="btn btn-ghost text-xl">Green Earth</h3>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#FACC15] rounded-4xl border-none text-[#15803D]">Plant a Tree</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-[#F0FDF4]">
+
+        <!-- banner section -->
+
+        <section class="banner-section bg-[#CFF0DC] flex justify-between items-center mt-8">
+            <div>
+                <img src="./assets/hero-leaf1.png" alt="">
+            </div>
+            <div class="text-center space-y-3">
+                <h1 class="font-bold text-3xl">Plant a Tree, Grow a Future</h1>
+                <p class="text-[#1F2937] text-xs">Join our mission to plant 1 million trees and make the Earth greener
+                    for future generations.</p>
+                <button class="btn bg-[#FACC15] rounded-4xl text-[#15803D]">Get Involved</button>
+            </div>
+            <div>
+                <img src="./assets/hero-leaf2.png" alt="">
+            </div>
+        </section>
+
+        <!-- card section -->
+
+        <section class="mt-20 w-11/12 mx-auto ">
+            <!-- <h2 class="font-bold text-2xl text-center mb-8">Choose Your Trees</h2> -->
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-12 lg:col-span-2 p-5 space-y-3">
+                    <h2 class="font-bold">Categories</h2>
+                    <div class="space-y-3">
+                        <p class="hover:bg-[#15803D] hover:text-white p-2">All Trees</p>
+                        <p>All Trees</p>
+                        <p>All Trees</p>
+                        <p>All Trees</p>
+                        <p>All Trees</p>
+                        <p>All Trees</p>
+                        <p>All Trees</p>
+                        <p>All Trees</p>
+                    </div>
+                </div>
+
+                <div class="col-span-12 lg:col-span-8 grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    <div class="card bg-base-100 p-5 shadow-sm">
+                        <figure >
+                            <img src="./assets/about.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="mt-3">
+                            <h2 class="card-title">Mango Tree</h2>
+                            <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its
+                                dense green</p>
+                            <div class="card-actions mt-3 justify-between">
+                                <div class="badge p-3 rounded-3xl font-semibold bg-[#DCFCE7]">Fruit Tree</div>
+                                <div class="font-semibold">৳500</div>
+                            </div>
+                            <button class="btn bg-[#15803D] mt-3 text-white btn-block rounded-3xl">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 p-5 shadow-sm">
+                        <figure >
+                            <img src="./assets/about.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="mt-3">
+                            <h2 class="card-title">Mango Tree</h2>
+                            <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its
+                                dense green</p>
+                            <div class="card-actions mt-3 justify-between">
+                                <div class="badge p-3 rounded-3xl font-semibold bg-[#DCFCE7]">Fruit Tree</div>
+                                <div class="font-semibold">৳500</div>
+                            </div>
+                            <button class="btn bg-[#15803D] mt-3 text-white btn-block rounded-3xl">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 p-5 shadow-sm">
+                        <figure >
+                            <img src="./assets/about.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="mt-3">
+                            <h2 class="card-title">Mango Tree</h2>
+                            <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its
+                                dense green</p>
+                            <div class="card-actions mt-3 justify-between">
+                                <div class="badge p-3 rounded-3xl font-semibold bg-[#DCFCE7]">Fruit Tree</div>
+                                <div class="font-semibold">৳500</div>
+                            </div>
+                            <button class="btn bg-[#15803D] mt-3 text-white btn-block rounded-3xl">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white col-span-12 lg:col-span-2 p-5 shadow-lg rounded-2xl">
+                    <h2 class="font-bold">Your Cart</h2>
+                    <div class="flex justify-between items-center mt-3 rounded-xl p-3 bg-[#F0FDF4]">
+                        <div class="">
+                            <h3 class="font-semibold">Mango Tree</h3>
+                            <p>500*1</p>
+                        </div>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
 </body>
+
 </html>
