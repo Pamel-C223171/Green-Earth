@@ -21,7 +21,7 @@
     <header class="bg-[#15803D] px-12">
         <div class="navbar text-white shadow-sm">
             <div class="navbar-start">
-                <h3 class="btn btn-ghost text-xl">Green Earth</h3>
+                <h3 class="text-xl">Green Earth</h3>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -31,7 +31,7 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn bg-[#FACC15] rounded-4xl border-none text-[#15803D]">Plant a Tree</a>
+                <a class="btn bg-[#FACC15] hover:bg-[#f0ca62] rounded-4xl border-none text-[#15803D]">Plant a Tree</a>
             </div>
         </div>
     </header>
@@ -47,9 +47,12 @@
             </div>
             <div class="text-center space-y-3">
                 <h1 class="font-bold text-base lg:text-4xl">Plant a Tree, Grow a Future</h1>
-                <p class="text-[#1F2937] text-xs lg:text-sm">Join our mission to plant 1 million trees and make the Earth greener
+                <p class="text-[#1F2937] text-xs lg:text-sm">Join our mission to plant 1 million trees and make the
+                    Earth greener
                     for future generations.</p>
-                <button class="btn bg-[#FACC15] rounded-4xl lg:text-sm text-xs border-none text-[#15803D]">Get Involved</button>
+                <button
+                    class="btn bg-[#FACC15] hover:bg-[#f0ca62] rounded-4xl lg:text-sm text-xs border-none text-[#15803D]">Get
+                    Involved</button>
             </div>
             <div>
                 <img src="./assets/hero-leaf2.png" alt="">
@@ -63,7 +66,8 @@
             <div class="grid grid-cols-12 gap-5">
                 <div class="col-span-12 lg:col-span-2 p-5 space-y-3">
                     <h2 class="font-bold text-center lg:text-left">Categories</h2>
-                    <div id="categories-container" class="space-y-1 flex flex-wrap justify-center items-center lg:text-left lg:justify-start lg:items-start">
+                    <div id="categories-container"
+                        class="space-y-1 flex flex-wrap justify-center items-center lg:text-left lg:justify-start lg:items-start">
                         <!-- <p class="hover:bg-[#15803D] hover:text-white p-2">All Trees</p> -->
                     </div>
                 </div>
@@ -117,22 +121,24 @@
                     </div> -->
                 </div>
 
-                <div class="bg-white col-span-12 lg:col-span-2 p-5 shadow-lg rounded-2xl">
+                <div id="cart-container" class="bg-white col-span-12 lg:col-span-2 p-5 shadow-lg rounded-2xl">
                     <h2 class="font-bold">Your Cart</h2>
-                    <div class="flex justify-between items-center my-3 rounded-xl p-3 bg-[#F0FDF4]">
-                        <div class="">
-                            <h3 class="font-semibold">Mango Tree</h3>
-                            <p>500*1</p>
-                        </div>
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
+                    <div class="cart-items"></div>
                     <hr>
                     <div class="flex justify-between">
                         <h3 class="font-semibold">Total:</h3>
-                        <p>৳1000</p>
+                        <p>৳<span id="total-price">0</span></p>
                     </div>
                 </div>
             </div>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div id="modal-content" class="modal-box space-y-3 overflow-y-auto">
+                   
+                </div>
+            </dialog>
         </section>
 
         <!-- about sectio -->
@@ -160,15 +166,15 @@
         <section class="bg-[#CFF0DC] p-10 mt-10">
             <h2 class="font-bold text-3xl text-center mb-10">Our Impact</h2>
             <div class="flex flex-col items-center justify-center lg:flex-row gap-5 lg:gap-12">
-                <div class="bg-white w-40 p-2 lg:p-10 text-center rounded-xl lg:w-96">
+                <div class="bg-white hover:bg-[#ace6c1] w-40 p-2 lg:p-10 text-center rounded-xl lg:w-96">
                     <h3 class="font-semibold text-2xl text-[#15803D]">500K+</h3>
                     <p class="text-sm mt-2 text-[#7b8087]">Trees Planted</p>
                 </div>
-                <div class="bg-white w-40 p-2 lg:p-10 text-center rounded-xl lg:w-96">
+                <div class="bg-white hover:bg-[#ace6c1] w-40 p-2 lg:p-10 text-center rounded-xl lg:w-96">
                     <h3 class="font-semibold text-2xl text-[#15803D]">120+</h3>
                     <p class="text-sm mt-2 text-[#7b8087]">Communities Involved</p>
                 </div>
-                <div class="bg-white w-40 p-2 lg:p-10 text-center rounded-xl lg:w-96">
+                <div class="bg-white hover:bg-[#ace6c1] w-40 p-2 lg:p-10 text-center rounded-xl lg:w-96">
                     <h3 class="font-semibold text-2xl text-[#15803D]">30+</h3>
                     <p class="text-sm mt-2 text-[#7b8087]">Countries Reached</p>
                 </div>
@@ -181,16 +187,19 @@
 
             <h2 class="text-center text-white font-bold text-2xl">Plant a Tree Today</h2>
 
-            <div class=" bg-[#15803D] lg:w-[450px] p-4 lg:py-10 flex flex-col gap-3 items-center justify-center rounded-2xl">
+            <div
+                class=" bg-[#15803D] lg:w-[450px] p-4 lg:py-10 flex flex-col gap-3 items-center justify-center rounded-2xl">
                 <input type="text" placeholder="Your Name" class="input " />
                 <input type="text" placeholder="Your Email Address" class="input" />
                 <select class="select select-success">
                     <option disabled selected>Number of Trees</option>
-                    <option>npm</option>
-                    <option>Bun</option>
-                    <option>yarn</option>
+                    <option>1 Tree - $5</option>
+                    <option>5 Trees - $25</option>
+                    <option>10 Trees - $50</option>
                 </select>
-                <button class="btn bg-[#FACC15] w-[320px] border-none mt-3  text-[#166534] rounded-3xl">Add to Cart</button>
+                <button
+                    class="btn bg-[#FACC15] hover:bg-[#f0ca62] w-[320px] border-none mt-3  text-[#166534] rounded-3xl">Add
+                    to Cart</button>
             </div>
 
         </section>
@@ -210,3 +219,11 @@
 </body>
 
 </html>
+
+
+<!-- <div class="cart-items mb-2"></div> -->
+<!-- <div class="">
+                            <h3 class="font-semibold">Mango Tree</h3>
+                            <p>500*1</p>
+                        </div>
+                        <i class="fa-solid fa-xmark"></i> -->
